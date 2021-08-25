@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:id="@+id/image_item"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:src="@drawable/img"
+    android:layout_marginTop="10dp"
+    />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="90dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_edit"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@null"
+        android:hint="Enter the name"
+        android:drawableRight="@drawable/ic_crose"
+        android:drawableLeft="@drawable/ic_circle_account"
+        android:id="@+id/profile__name"
+        android:layout_margin="10dp"
+        android:padding="12dp"
+        android:background="@drawable/bg_desing"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_item"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Phone Number"
+        android:drawableRight="@drawable/ic_crose"
+        android:id="@+id/profile_number"
+        android:drawableLeft="@drawable/ic_phone"
+        android:layout_margin="10dp"
+        android:padding="12dp"
+        android:background="@drawable/bg_desing"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile__name"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Email"
+        android:drawableRight="@drawable/ic_crose"
+        android:drawableLeft="@drawable/ic_email"
+        android:id="@+id/profile_email"
+        android:layout_margin="10dp"
+        android:padding="12dp"
+        android:background="@drawable/bg_desing"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_number"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Address"
+        android:drawableRight="@drawable/ic_crose"
+        android:drawableLeft="@drawable/ic_location"
+        android:id="@+id/profile_address"
+        android:layout_margin="10dp"
+        android:padding="12dp"
+        android:background="@drawable/bg_desing"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_email"
+        />
+
+    <!--<EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the City"
+        android:drawableLeft="@drawable/ic_address"
+        android:id="@+id/profile_city"
+        android:layout_margin="10dp"
+        android:padding="12dp"
+        android:background="@drawable/bg_desing"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_address"
+        />
+-->
+    <!--<EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Wheeler"
+        android:drawableLeft="@drawable/ic_vechicle"
+        android:id="@+id/profile_vechicle"
+        android:layout_margin="10dp"
+        android:padding="12dp"
+        android:background="@drawable/bg_desing"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_city"
+        />-->
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:id="@+id/profile_button"
+        android:textSize="16dp"
+        android:text="Update"
+        android:textColor="#EDEAEA"
+        android:backgroundTint="@color/colour"
+        android:background="@drawable/bg_desing"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_address"
+        android:layout_margin="30dp"
+
+
+        />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

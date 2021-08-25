@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+    <item
+        android:title="Home page"
+        android:id="@+id/setting"
+        android:icon="@drawable/ic_shop"
+        />
+    <item
+        android:title="Profile"
+        android:id="@+id/message"
+        android:actionLayout="@layout/menu_switch"
+        android:icon="@drawable/ic_account"
+        />
+
+        <item
+            android:title="Shop"
+            android:id="@+id/shop"
+            android:icon="@drawable/ic_people2"
+            />
+    <!--<item
+        android:title="shop"
+        android:id="@+id/shop"
+        android:icon="@drawable/ic_shop"
+        />-->
+
+    <item
+        android:title="Bike Service"
+        android:id="@+id/bike_id"
+        android:icon="@drawable/ic_bike"
+        />
+
+        <item
+            android:title="Car Servcie"
+            android:id="@+id/car_id"
+            android:icon="@drawable/ic_car"
+            />
+
+        <item
+            android:title="History"
+            android:id="@+id/history_id"
+            android:icon="@drawable/ic_history"
+            />
+
+        <item
+            android:title="Wallet History"
+            android:id="@+id/wallet_history_id"
+            android:icon="@drawable/ic_history2"
+            />
+
+        <item
+            android:title="Kyc"
+            android:id="@+id/kyc_bank"
+            android:icon="@drawable/ic_kyc"
+            />
+
+        <item
+            android:title="Listing Vehicle"
+            android:id="@+id/listing"
+            android:icon="@drawable/ic_wallet"
+            />
+
+        <item
+            android:title=" Vehicle View"
+            android:id="@+id/View_id"
+            android:icon="@drawable/ic_wallet"
+            />
+
+
+        <item
+            android:title="Logout"
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_logout"
+            />
+
+
+    </group>
+
+    <item
+        android:title="commaction"
+
+        >
+
+        <menu
+            >
+
+            <item
+                android:title="Create_Team_Member"
+                android:id="@+id/bank"
+                android:icon="@drawable/ic_people2"
+                />
+
+
+
+
+        </menu>
+
+    </item>
+
+
+
+
+
+</menu>

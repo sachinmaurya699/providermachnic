@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sossolution.serviceonwayustad.My_Activity.Login_Activity">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/image_id"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/imglogo"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="service_on_way"
+        android:id="@+id/serviceonway_id"
+        android:textAllCaps="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#F5970D"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_id"
+
+        />
+
+    <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="+91"
+       android:id="@+id/country_code"
+       android:layout_marginStart="15dp"
+       android:drawableLeft="@drawable/flag1"
+       app:layout_constraintLeft_toLeftOf="parent"
+       android:padding="12dp"
+       android:layout_marginTop="30dp"
+       android:textSize="21sp"
+       app:layout_constraintTop_toBottomOf="@+id/serviceonway_id"
+       />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:ems="10"
+        android:maxLength="10"
+        android:textCursorDrawable="@drawable/curser_design"
+        android:digits="0123456789"
+        android:inputType="number"
+        android:layout_marginStart="95dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginEnd="18dp"
+        android:id="@+id/my_number_id"
+        android:hint="Mobile Number"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/serviceonway_id"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:ems="5"
+        android:layout_margin="20dp"
+        android:id="@+id/login_btn_id"
+        android:text="Generate OTP"
+        android:textSize="21dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#F5970D"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_number_id"
+        >
+    </Button>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

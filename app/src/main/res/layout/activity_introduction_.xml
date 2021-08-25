@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sossolution.serviceonwayustad.My_Activity.Introduction_Activity">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager_id"
+        android:layout_width="match_parent"
+        android:layout_height="590dp"
+
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.257" />
+
+    <LinearLayout
+        android:id="@+id/layoutDots"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_pager_id"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutDots"
+        android:alpha=".9"
+        android:visibility="gone"
+        android:background="#D81B60"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Skip"
+        android:visibility="gone"
+        android:id="@+id/button_skip"
+        android:textColor="#fff"
+        android:background="#000"
+        app:layout_constraintTop_toBottomOf="@+id/view_pager_id"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Go it"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/button_next"
+        android:textColor="#fff"
+        android:background="#B1A5A5"
+        app:layout_constraintTop_toBottomOf="@+id/view_pager_id"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

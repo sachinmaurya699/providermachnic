@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sossolution.serviceonwayustad">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <!-- ...........................map................. -->
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" /> <!-- current location get -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28">
+    </uses-permission>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:launchMode="singleInstance"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.sossolution.serviceonwayustad.My_Activity.All_Team_member_list_Activity">
+
+        </activity>
+        <activity
+            android:name="com.sossolution.serviceonwayustad.My_Activity.History_add_service_Activity"
+            android:theme="@style/MyAppCompatDialogTheme">
+
+        </activity>
+        <activity android:name="com.sossolution.serviceonwayustad.My_Activity.History_service_details_Activity" />
+        <activity android:name="com.sossolution.serviceonwayustad.My_Activity.Car_price_custom_Activity" />
+        <activity android:name="com.sossolution.serviceonwayustad.My_Activity.Bike_Price_Custom_Activity" />
+        <activity android:name="com.sossolution.serviceonwayustad.Location_Activity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.sossolution.serviceonwayustad.My_Activity.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name="com.sossolution.serviceonwayustad.My_Activity.Details_Activity" />
+        <activity android:name="com.sossolution.serviceonwayustad.My_Activity.Introduction_Activity" />
+        <activity android:name="com.sossolution.serviceonwayustad.My_Activity.Signup_Activity" />
+        <activity android:name="com.sossolution.serviceonwayustad.My_Activity.Splash_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.sossolution.serviceonwayustad.My_Activity.Otp_Activity" />
+        <activity android:name="com.sossolution.serviceonwayustad.My_Activity.Login_Activity" />
+        <activity android:name="com.sossolution.serviceonwayustad.My_Activity.Upload_Activity" />
+        <activity android:name="com.sossolution.serviceonwayustad.My_Activity.Model_Activity" />
+        <activity android:name="com.sossolution.serviceonwayustad.My_Activity.Maker_Activity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.sossolution.serviceonwayustad.My_Activity.MainActivity" />
+
+        <receiver android:name="com.sossolution.serviceonwayustad.My_Activity.MyBroadcast">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

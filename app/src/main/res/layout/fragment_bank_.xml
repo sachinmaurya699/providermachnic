@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+     <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/image_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/img"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:src="@drawable/ic_camera"
+        android:id="@+id/floating_1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the name"
+        android:background="@drawable/bg_desing"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_circle_account"
+        android:id="@+id/name_team"
+        android:layout_margin="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view"
+        >
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Contact"
+        android:background="@drawable/bg_desing"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_phone"
+        android:id="@+id/contact_id"
+        android:layout_margin="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_team"
+        >
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Address"
+        android:background="@drawable/bg_desing"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_address"
+        android:id="@+id/address"
+        android:layout_margin="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact_id"
+        >
+    </EditText>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Email"
+        android:background="@drawable/bg_desing"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:id="@+id/email_1"
+        android:layout_margin="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address"
+        >
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Password"
+        android:inputType="numberPassword"
+        android:background="@drawable/bg_desing"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_people2"
+        android:id="@+id/password"
+        android:layout_margin="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_1"
+        >
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Aadhar Number"
+        android:id="@+id/Aadhar_number"
+        android:background="@drawable/bg_desing"
+        android:padding="10dp"
+        android:maxLength="12"
+        android:inputType="number"
+        android:drawableLeft="@drawable/ic_card"
+        android:layout_margin="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        >
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:drawableRight="@drawable/upload1"
+         android:gravity="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="15dp"
+        android:id="@+id/addhar_id"
+        android:text="UPLOAD AADHAR"
+        app:layout_constraintTop_toBottomOf="@+id/Aadhar_number"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="15dp"
+        android:id="@+id/create_team_btn"
+        android:padding="15dp"
+        android:textColor="#fff"
+        android:background="@drawable/bg_desing"
+        android:backgroundTint="@color/colour"
+        android:text="CREATE TEAM MEMBER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addhar_id"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

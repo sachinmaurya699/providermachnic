@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   <androidx.core.widget.NestedScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.sossolution.serviceonway.Activity.UploadVehicle_Activity">
+        <include
+            android:id="@+id/layout"
+            layout="@layout/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </include>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabtwo"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_margin="15dp"
+            android:background="#EFEBEB"
+            app:tabIndicator="@color/color1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout"
+
+            app:tabMode="fixed">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color1"
+                android:clickable="false"
+                android:text="VEHICLE" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:background="@color/color1"
+                android:text="MAKE"
+
+                />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:background="@color/color1"
+                android:text="MODEL" />
+
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <TextView
+            android:id="@+id/fuel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginTop="25dp"
+            android:background="#FF9800"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="FUEL"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tabtwo" />
+
+        <Spinner
+            android:id="@+id/spinner_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="2dp"
+            android:padding="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fuel" />
+
+        <TextView
+            android:id="@+id/transmission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#FF9800"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="TRANSMISSION"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_1" />
+
+        <Spinner
+            android:id="@+id/spinner_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="2dp"
+            android:padding="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/transmission" />
+
+        <TextView
+            android:id="@+id/NO_OF_OWNERS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#FF9800"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="NO OF OWNERS"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_2" />
+
+        <Spinner
+            android:id="@+id/spinner_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="2dp"
+            android:padding="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/NO_OF_OWNERS" />
+
+        <EditText
+            android:id="@+id/km"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#FF9800"
+            android:gravity="center"
+            android:hint="KM DRIVEN"
+            android:padding="5dp"
+            android:textSize="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_3" />
+
+        <TextView
+            android:id="@+id/text_year"
+            android:layout_width="match_parent"
+            android:ems="23"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_cal"
+            android:layout_margin="5dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:hint="YEAR"
+            android:padding="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/km" />
+
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/design"
+            android:gravity="center"
+            android:hint="ENTER THE TITLE"
+            android:inputType="textMultiLine"
+            android:padding="20dp"
+            android:singleLine="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_year" />
+
+        <EditText
+            android:id="@+id/des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/design"
+            android:gravity="center"
+            android:hint=" ENTER THE DES"
+            android:inputType="text"
+            android:padding="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <EditText
+
+            android:id="@+id/new_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/design"
+            android:gravity="center"
+            android:hint="PRICE"
+            android:inputType="number"
+            android:padding="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/des" />
+
+        <Button
+            android:id="@+id/upload_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="#EDE7E7"
+            android:padding="5dp"
+            android:text="UPLOAD_IMAGE"
+            android:textColor="#FF9800"
+            android:textSize="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_price"
+
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/conform_form"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FF9800"
+            android:background="@drawable/bg_desing"
+            android:padding="5dp"
+            android:text="Conform"
+            android:textColor="#F4F2F2"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/upload_image"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

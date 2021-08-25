@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_desing"
+            android:layout_height="300dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/text_id"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:layout_marginTop="10dp"
+                android:gravity="start"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/text_id_dynmic"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginStart="160dp"
+
+                />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="shop name"
+            android:id="@+id/shop_name_id"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_id"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sachin shop"
+                android:id="@+id/shop_name_3"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_id"
+                android:textSize="16sp"
+                android:layout_marginStart="160dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="online"
+                android:layout_marginTop="20dp"
+                android:id="@+id/shop_name_dynmic"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_id"
+                android:textSize="16sp"
+                android:layout_marginStart="160dp"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                android:id="@+id/Type_id"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/shop_name_id"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service date"
+                android:id="@+id/service_date"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/shop_name_dynmic"
+                android:textSize="16sp"
+                android:layout_marginStart="160dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service date"
+                android:id="@+id/service_date_dynmic"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Type_id"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking date"
+                android:id="@+id/booking_date"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/service_date"
+                android:textSize="16sp"
+                android:layout_marginStart="160dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking date"
+                android:id="@+id/booking_date_dymic"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/service_date"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount"
+                android:id="@+id/amount"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/booking_date"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount"
+                app:layout_constraintRight_toRightOf="parent"
+                android:id="@+id/amount_1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/booking_date"
+                android:textSize="16sp"
+                android:layout_marginStart="160dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="States"
+                android:id="@+id/states_id"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/amount"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="States"
+                android:id="@+id/states_dynmic"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/amount"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textSize="16sp"
+                android:layout_marginStart="160dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:text="view"
+                android:backgroundTint="#FFA500"
+                android:background="@drawable/bg_desing"
+                android:textColor="#fff"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/states_id"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+       </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

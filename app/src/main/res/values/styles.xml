@@ -1,0 +1,59 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#FF9800</item>
+        <item name="colorPrimaryDark">#FF9800</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="bgc">#ffffff</item>
+        <item name="tc">#000000</item>
+    </style>
+
+    <style name="Dark_Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="bgc">#000000</item>
+    </style>
+
+    <style name="SwitchTheme" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">#F60B0B</item>
+        <item name="colorControlNormal">#F60B0B</item>
+    </style>
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#FF9800</item>
+    </style>
+
+    <!-- Theme.AppCompat.Light.Dialog -->
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">#F38D0E</item>
+    </style>
+
+    //add them.....
+    <!--.................add them.........................-->
+    <style name="MyAppCompatDialogTheme" parent="AppTheme">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        //add new code
+        <item name="windowFixedWidthMajor">90%</item>
+        <item name="windowFixedWidthMinor">90%</item>
+
+    </style>
+
+
+
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toobar"
+        layout="@layout/my_toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </include>
+
+    <androidx.constraintlayout.widget.Guideline
+
+        android:id="@+id/guideline75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.020890584" />
+
+    <androidx.constraintlayout.widget.Guideline
+
+        android:id="@+id/guideline73"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.98" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+
+        android:id="@+id/guideline76"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.21" />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabtwo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline71"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toobar"
+        app:tabBackground="@color/cardview_light_background"
+        app:tabIndicatorColor="@color/cardview_light_background"
+        app:tabMode="fixed">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/make11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:clickable="false"
+            android:text="Make" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="Model"
+            />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="FuEL" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewservice"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline76"
+        app:layout_constraintEnd_toStartOf="@+id/guideline73"
+        app:layout_constraintStart_toStartOf="@+id/guideline75"
+        app:layout_constraintTop_toTopOf="@+id/guideline71" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_service"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroundprogressbar"
+        app:layout_constraintBottom_toTopOf="@+id/guideline76"
+        app:layout_constraintEnd_toStartOf="@+id/guideline73"
+        app:layout_constraintStart_toStartOf="@+id/guideline75"
+        app:layout_constraintTop_toTopOf="@+id/guideline71" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

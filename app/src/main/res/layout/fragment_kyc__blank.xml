@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   <androidx.core.widget.NestedScrollView
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Bank Details"
+        android:textAllCaps="true"
+        android:id="@+id/text_title"
+        android:gravity="center"
+        android:textSize="21sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+       android:background="#000"
+        android:id="@+id/my_textview"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_title"
+        />
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="ENTER PAN CARD NUMBER"
+       android:drawableLeft="@drawable/ic_card"
+       android:textSize="16sp"
+       android:cursorVisible="true"
+       android:textCursorDrawable="@null"
+       android:maxLength="10"
+       android:padding="10dp"
+       android:layout_marginTop="5dp"
+       android:background="@drawable/bg_desing"
+       android:layout_margin="5dp"
+       android:id="@+id/card_number"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/my_textview"
+       />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/upload1"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="UPLOAD PANCARD"
+        android:id="@+id/upload_pancard"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_number"
+
+        />
+      <!-- ....................imageview................-->
+
+       <ImageView
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:id="@+id/upload_card_image"
+           android:src="@drawable/service_logo"
+           app:layout_constraintRight_toRightOf="parent"
+           app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/upload_pancard"
+           />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ENTER GST NUMBER"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@null"
+        android:drawableLeft="@drawable/ic_card"
+        android:textSize="16sp"
+        android:maxLength="15"
+        android:layout_marginTop="5dp"
+        android:id="@+id/gst_id"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg_desing"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upload_card_image"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/upload1"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="UPLOAD GST"
+        android:id="@+id/upload_gst"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gst_id"
+
+        />
+
+       <ImageView
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:id="@+id/upload_gst_image"
+           android:src="@drawable/service_logo"
+           app:layout_constraintRight_toRightOf="parent"
+           app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/upload_gst"
+           />
+
+
+
+
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@null"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/ic_account"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upload_gst_image"
+        android:hint="ACCOUNT HOLDER NAME"
+        android:id="@+id/holder_name"
+        android:background="@drawable/bg_desing"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textCursorDrawable="@null"
+        android:cursorVisible="true"
+        android:maxLength="11"
+        android:drawableLeft="@drawable/ic_card"
+        android:layout_marginTop="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/holder_name"
+        android:hint="IFSC CODE"
+        android:id="@+id/ifsc_code"
+        android:background="@drawable/bg_desing"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textCursorDrawable="@null"
+        android:cursorVisible="true"
+        android:layout_marginTop="5dp"
+        android:maxLength="18"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ifsc_code"
+        android:hint="ACCOUNT NUMBER"
+        android:drawableLeft="@drawable/ic_account"
+        android:id="@+id/ACCOUNT_NUM"
+        android:background="@drawable/bg_desing"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textCursorDrawable="@null"
+        android:cursorVisible="true"
+        android:maxLength="18"
+        android:layout_marginTop="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ACCOUNT_NUM"
+        android:hint="Conform ACCOUNT NUMBER"
+        android:drawableLeft="@drawable/ic_account"
+        android:id="@+id/ACCOUNT_NUM_CONF"
+        android:background="@drawable/bg_desing"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/upload_bank"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ACCOUNT_NUM_CONF"
+        android:text="Update bank"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="16sp"
+        android:textColor="#F8EDED"
+        android:background="#979494"
+        android:layout_margin="10dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Serviceonway Ustad</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="bank">bank fragment</string>
+    <string name="call">call fragment</string>
+    <string name="Second_fragment">Hello second fragment</string>
+    <string name="Third_fragment">Hello Third fragment</string>
+    <string name="fourth_fragment">Hello fourth fragment</string>
+    <string name="five_fragment">Hello five fragment</string>
+
+    <!--<.................... facebook.......................>-->
+    <string name="facebook_app_id">1464165030640056</string>
+    <string name="fb_login_protocol_scheme">fb1464165030640056</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Emergency">Emergency</string>
+    <string name="todo">todo</string>
+    <string name="hiii">hii</string>
+    <string name="service_on_way">Serviceonway Mechanic App</string>
+    <string name="my_title1">Order Management</string>
+    <string name="my_title2">Accounting</string>
+    <string name="my_title3">Service</string>
+    <string name="my_title4">Team Managment </string>
+    <string name="slide_1">Order management involves a series of interconnected touchpoints and stakeholders  </string>
+    <string name="slide_2">Accounting is the process of recording financial transactions pertaining to a business.  </string>
+    <string name="slide_3">A service is a transaction in which no physical goods are transferred from the seller to the buyer</string>
+    <string name="slide_4">Team management is the ability of an individual or an organization to administer</string>
+    <string name="start">Skip</string>
+    <string name="next">Next</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="id">id</string>
+    <string name="date">date</string>
+    <string name="amount">amount</string>
+    <string name="include">include</string>
+    <string name="view">view</string>
+    <string name="processing1">process</string>
+    <string name="show_service">show_service</string>
+    <string name="my_value">03</string>
+    <string name="my_value1">03</string>
+    <string name="hero_splender_general_service">Hero,Splender + General Service</string>
+    <string name="what_type_of_vehicle_do_you_have">What Type of Vehicle Do You Have?</string>
+
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="KYC DETAILS"
+        android:id="@+id/kyc_details"
+        android:gravity="center"
+        android:textSize="20dp"
+
+        />
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="AADHAR NUMBER"
+       android:inputType="number"
+       android:maxLength="12"
+       android:layout_marginTop="5dp"
+       android:id="@+id/aadhnum"
+       android:drawableLeft="@drawable/ic_card"
+       android:layout_margin="5dp"
+       android:background="@drawable/bg_desing"
+       android:padding="10dp"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/kyc_details"
+       />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aadhnum"
+        android:text="Upload Aadhar Front"
+        android:id="@+id/fount"
+        android:gravity="center"
+        android:drawableRight="@drawable/upload1"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Aadhaar Font Image"
+        android:id="@+id/aadhar_card_fount_text"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/fount"
+        />
+
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/my_image_view"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/ic_crose"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aadhar_card_fount_text"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_image_view"
+        android:text="Upload Aadhar Back"
+        android:gravity="center"
+        android:id="@+id/addhar_back"
+        android:drawableRight="@drawable/upload1"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Aadhaar Back Image"
+        android:id="@+id/aadhar_card_back_text"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/addhar_back"
+        />
+
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/addhar_image_back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aadhar_card_back_text"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_update_kyc"
+        android:layout_marginTop="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="5dp"
+        android:textColor="#F4F0F0"
+        android:background="#A6A3A3"
+        android:text="UPDATE KYC"
+        app:layout_constraintTop_toBottomOf="@+id/addhar_image_back"
+        />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
